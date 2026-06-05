@@ -1,0 +1,49 @@
+# Restricted survey data
+data/
+Data/
+*.sav
+*.por
+*.qsf
+*Qualtrics*.xlsx
+*Resident Attitudes and Behaviors*.xlsx
+*Resident Attitudes and Behaviors*.csv
+*_column_map.csv
+!tests/fixtures/synthetic_qualtrics_export.xlsx
+
+# Generated outputs
+outputs/
+Outputs/
+plots/
+report.html
+*_profile.html
+tableone.xlsx
+cmh_results_by_item.csv
+*.log
+
+# Local notebooks and caches
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environments
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# Office/editor/OS artifacts
+.DS_Store
+~$*
+*.tmp
+*.swp
+*.swo
+
+# Editable drafts and exports
+Drafts/
+*.pptx
+*.docx
+*.key
