@@ -7,6 +7,9 @@ dependencies:
   - numpy=2.1.*          # ABI-critical
   - numba=0.61.0         # matches NumPy 2.1
   - pandas=2.2.*
+  - matplotlib
+  - scipy
+  - statsmodels
   - ydata-profiling=4.16.*   # adjust if you have a known-good
   - jupyterlab
   - ipykernel

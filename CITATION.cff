@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the repository software and the ATS 2026 abstract."
+title: "code-status-exploration: Survey analysis for resident code-status exploration versus verification discussions"
+type: software
+authors:
+  - family-names: Long
+    given-names: Colton W.
+  - family-names: Langmann
+    given-names: Gabrielle A.
+  - family-names: Hirshberg
+    given-names: Eliote L.
+  - family-names: Locke
+    given-names: Brian W.
+    orcid: "https://orcid.org/0000-0002-3588-5238"
+repository-code: "https://github.com/reblocke/code-status-exploration"
+url: "https://github.com/reblocke/code-status-exploration"
+license: MIT
+version: "0.1.0"
+date-released: "2026-06-05"
+keywords:
+  - code status
+  - goals of care
+  - intensive care
+  - medical education
+  - survey research
+  - reproducible research
+preferred-citation:
+  type: article
+  title: "C56-19 Beyond Verification: Exploring Resident Attitudes and Behaviors in Code-Status Discussions"
+  authors:
+    - family-names: Long
+      given-names: Colton W.
+    - family-names: Langmann
+      given-names: Gabrielle A.
+    - family-names: Hirshberg
+      given-names: Eliote L.
+    - family-names: Locke
+      given-names: Brian W.
+      orcid: "https://orcid.org/0000-0002-3588-5238"
+  journal: "American Journal of Respiratory and Critical Care Medicine"
+  volume: "212"
+  issue: "Supplement_1"
+  year: 2026
+  date-published: "2026-05-01"
+  doi: "10.1093/ajrccm/aamag162.1058"
+  url: "https://doi.org/10.1093/ajrccm/aamag162.1058"

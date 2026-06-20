@@ -1,0 +1,52 @@
+# code-status-exploration
+
+Repository: https://github.com/reblocke/code-status-exploration
+Primary scholarly record: https://doi.org/10.1093/ajrccm/aamag162.1058
+OUP abstract page: https://academic.oup.com/ajrccm/article/212/Supplement_1/aamag162.1058/8680759
+Public poster: poster/code-status-exploration-ats-2026-poster.pdf
+
+## Purpose
+
+This repository supports a resident survey analysis about code-status discussions during ICU admission. It separates code-status verification, meaning confirmation and documentation of previously established goals of care, from code-status exploration, meaning shared decision-making about new or revised treatment preferences in the current clinical context.
+
+## Citable Work
+
+The current citable scholarly output is the ATS 2026 abstract:
+
+Long CW, Langmann GA, Hirshberg EL, Locke BW. C56-19 Beyond Verification: Exploring Resident Attitudes and Behaviors in Code-Status Discussions. American Journal of Respiratory and Critical Care Medicine. 2026;212(Supplement_1). doi:10.1093/ajrccm/aamag162.1058.
+
+No PMID, PMCID, journal article, or manuscript record exists for this repository as of this readiness pass.
+
+## Data Boundary
+
+The source Qualtrics workbook is restricted. It contains respondent metadata and free-text survey responses and must not be committed or published. Expected local path:
+
+data/private/resident_code_status_survey.xlsx
+
+The repository may contain only code, metadata, documentation, synthetic fixtures, aggregate summaries, and the sanitized poster PDF.
+
+## Run Command
+
+python scripts/analyze_code_status.py --input data/private/resident_code_status_survey.xlsx --output-dir outputs/analysis
+
+Synthetic smoke command:
+
+python scripts/analyze_code_status.py --input tests/fixtures/synthetic_qualtrics_export.xlsx --output-dir /tmp/code-status-smoke
+
+## Important Files
+
+- README.md: human-readable overview and reproduction guide.
+- CITATION.cff: repository software citation plus ATS abstract citation.
+- data_dictionary.md and data_dictionary.csv: source and derived variable documentation.
+- scripts/analyze_code_status.py: canonical path-safe analysis script.
+- ats_abstract_tables.ipynb: stripped optional notebook wrapper.
+- tests/fixtures/synthetic_qualtrics_export.xlsx: no-respondent test fixture.
+- poster/code-status-exploration-ats-2026-poster.pdf: flattened public poster.
+
+## Future-Agent Cautions
+
+- Do not add raw Qualtrics exports, response IDs, timestamps, free-text responses, profiling HTML, generated plot folders, or editable poster drafts.
+- Do not copy full publisher abstract text into repository Markdown.
+- Do not invent PMID, PMCID, journal article, manuscript submission, or acceptance metadata.
+- Keep generated outputs under ignored outputs/ paths.
+- Validate CITATION.cff and keep the data dictionary in sync with the analysis script when survey fields change.
