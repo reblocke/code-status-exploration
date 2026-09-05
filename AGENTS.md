@@ -18,8 +18,8 @@
 
 ## Required Checks
 
-- Validate `CITATION.cff` with `cffconvert` or a YAML parse.
-- Run `python -m pytest`.
-- Run the synthetic smoke command.
+- After citation edits, validate `CITATION.cff` with `cffconvert` or a YAML parse.
+- For analysis-code or input-contract changes, run `python -m pytest` and the synthetic smoke command. Use a fresh smoke output directory if the example destination contains existing work.
+- Documentation-only edits need affected-reference checks; a synthetic pass does not establish restricted-data reproduction.
 - Run `git diff --check`.
 - Search for raw survey artifacts, hard-coded local paths, notebook output blobs, and overclaimed publication metadata before public release.
